@@ -1,2 +1,2 @@
 #!/bin/bash
-ssh towel.blinkenlights.nl
+telnet towel.blinkenlights.nl
