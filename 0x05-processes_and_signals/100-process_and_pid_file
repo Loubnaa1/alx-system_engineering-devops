@@ -13,7 +13,7 @@ delete_and_exit() {
     exit
 }
 
-trap 'echo "I hate the kill command"' SIGTERM
+trap 'echo "I hate the kill command" && delete_and_exit' SIGTERM
 trap 'echo "Y U no love me?!"' SIGINT
 trap 'delete_and_exit' SIGQUIT
 while true
