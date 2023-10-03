@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Script for FizzBuzz GAME 
+k=1
+while [ $k -le 100 ]
+do
+	if (( k % 3 == 0 && k % 5 == 0 )); then
+		echo "FizzBuzz"
+	elif (( k % 3 == 0 && k % 5 != 0 )); then
+		echo "Fizz"
+	elif (( k % 3 != 0 && k % 5 == 0 )); then
+		echo "Buzz"
+	else
+		echo "$k"
+	fi
+	(( k++ ))
+done
