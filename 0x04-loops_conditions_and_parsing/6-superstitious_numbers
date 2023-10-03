@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 # Script that displays numbers from 1 to 20 and for each iteration a message.
 
-k=0
+k=1
 while [ $k -le 20 ]
 do
 	case $k in
-		"4")echo "$k"
-			echo "bad luck from China";;
-		"9")echo "$k"
-			echo "bad luck from Japan";;
-		"17")echo "$k"
-			echo "bad luck from Italy";;
-		"*")echo "$k";;
+		4)echo "$k"
+		echo "bad luck from China";;
+		9)echo "$k"
+		echo "bad luck from Japan";;
+		17)echo "$k"
+		echo "bad luck from Italy";;
+		*)echo "$k";;
 		esac
 		(( k++ ))
 done
