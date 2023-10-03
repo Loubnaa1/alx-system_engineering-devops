@@ -4,7 +4,7 @@
 stund=0
 while [ $stund -le 12 ]
 do
-	echo "Hour: $i"
+	echo "Hour: $stund"
 	minu=1
 	while [ $minu -le 59 ]
 	do

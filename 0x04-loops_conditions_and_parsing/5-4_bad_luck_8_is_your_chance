@@ -5,9 +5,9 @@
 k=1
 while [[ $k -lt 10 ]]
 do
-	if [ $k == 3 ]; then
+	if [ $k == 4 ]; then
 		echo "bad luck"
-	elif [ $k == 7 ]; then
+	elif [ $k == 8 ]; then
 		echo "good luck"
 	else
 		echo "Best School"
