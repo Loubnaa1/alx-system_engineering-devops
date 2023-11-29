@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#SSH reconfiguration file for the local SSH client
+Host 391887-web-01
+    Hostname 54.167.177.70
+    User ubuntu
+    PasswordAuthentication no
+    IdentityFile ~/.ssh/school
