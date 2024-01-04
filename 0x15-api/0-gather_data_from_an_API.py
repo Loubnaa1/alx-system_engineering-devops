@@ -4,8 +4,8 @@
 import requests
 import sys
 
-def main():
 
+def main():
 
     em_id = sys.argv[1]
     base_url = "https://jsonplaceholder.typicode.com/"
