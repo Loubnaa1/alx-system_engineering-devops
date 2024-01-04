@@ -13,9 +13,11 @@ def main():
     user = user_response.json()
     todos = todor.json()
     tasks = [todo['title'] for todo in todos if todo.get('completed')]
-    user_name = user.get('name', 'Unknown User')
-    print(f"Employee {user_name} is done with tasks({len(tasks)}/{len(todos)}):")
+    use = user.get('name', 'Unknown User')
+    print(f"Employee {use} is done with tasks({len(tasks)}/{len(todos)}):")
     for task_title in tasks:
         print(f"\t {task_title}")
+
+
 if __name__ == "__main__":
     main()
