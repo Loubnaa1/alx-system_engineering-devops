@@ -25,4 +25,3 @@ if __name__ == "__main__":
 
     with open(f"{user_id}.json", "w") as file:
         json.dump(user_data, file)
-
