@@ -11,7 +11,7 @@ if __name__ == "__main__":
     for user in users:
         user_id = user["id"]
         todos = requests.get(f"{base_url}todos",
-                params={"userId": user_id}).json()
+                             params={"userId": user_id}).json()
 
         all_users_todo_data[user_id] = [
             {
