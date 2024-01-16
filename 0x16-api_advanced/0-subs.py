@@ -2,7 +2,6 @@
 """ contains a function that queries the Reddit API."""
 import requests
 
-
 def number_of_subscribers(subreddit):
     """function that returns the number of subscriber"""
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
@@ -12,3 +11,4 @@ def number_of_subscribers(subreddit):
         return 0
     results = response.json().get("data")
     return results.get("subscribers")
+

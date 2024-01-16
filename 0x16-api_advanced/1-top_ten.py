@@ -3,7 +3,6 @@
 
 import requests
 
-
 def top_ten(subreddit):
     """function that Displays the titles of the first 10 hot posts listed
     for a given subreddit"""
@@ -18,3 +17,4 @@ def top_ten(subreddit):
     results = response.json().get("data")
     for item in results.get("children", []):
         print(item.get("data", {}).get("title"))
+
