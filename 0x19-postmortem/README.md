@@ -33,4 +33,4 @@ From the ashes of our battle, the following actions have been initiated::
 - **🎓 Enhanced Engineer Training:** Our knights and mages will delve into both ancient wisdom and the newest of schools, mastering the arcane arts of database optimization.
 
 
-These steps are intended to fortify our infrastructure against significant demand spikes and prevent similar incidents in the future.. 🚀�
+These steps are intended to fortify our infrastructure against significant demand spikes and prevent similar incidents in the future.
