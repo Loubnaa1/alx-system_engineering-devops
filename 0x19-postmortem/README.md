@@ -1,6 +1,6 @@
-# 🎢 The Great Database Rollercoaster of 2024: A Thrilling Post-Mortem 🕵️‍♂️
+# 🎢 The Great Database Rollercoaster, Site Downtime Due to Database Overcapacity🕵️‍♂️
 
-## Executive Summary: The Saga Begins 🌟
+## Executive Summary: The battle Begins 🌟
 
 On March 5, 2024, between 10:00 AM and 12:45 PM EST, our primary web service experienced significant downtime, affecting approximately 65% of our users. This period of instability was characterized by delayed response times and widespread service timeouts, traced back to an overload on our central database server. This report details the events, root cause analysis, and the measures taken to resolve and prevent future incidents.A formidable beast known as the Database Overload Dragon, thriving in the shadows of query inefficiency and misconfigured cache lairs.
 
