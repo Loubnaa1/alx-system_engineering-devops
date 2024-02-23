@@ -1,13 +1,6 @@
 # login with holberton user without any error message
 
-exec { 'holberton-soft-nofile':
-  command => "sed -i '/^holberton soft nofile/!b;n;c\\holberton soft nofile 5000' /etc/security/limits.conf",
+exec { 'increase_nofile_limit':
+  command => "/bin/sed -i '/^holberton\s/ s/soft nofile [0-9]\+/soft nofile 4000/' /etc/security/limits.conf && /bin/sed -i '/^holberton\s/ s/hard nofile [0-9]\+/hard nofile 4000/' /etc/security/limits.conf",
   path    => ['/bin', '/usr/bin'],
-  unless  => "grep -q '^holberton soft nofile 5000$' /etc/security/limits.conf",
-}
-
-exec { 'holberton-hard-nofile':
-  command => "sed -i '/^holberton hard nofile/!b;n;c\\holberton hard nofile 5000' /etc/security/limits.conf",
-  path    => ['/bin', '/usr/bin'],
-  unless  => "grep -q '^holberton hard nofile 5000$' /etc/security/limits.conf",
 }
